@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--BOOTSTRAP-->
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+    rel="stylesheet">
+  <title>java session</title>
+</head>
+
+<body>
+  <main>
+    <section class="my-4">
+      <div class="container h-100">
+        <h1 class="text-center py-2 mx-auto my-5">Bookmarker</h1>
+        
+        <form class="mt-4 text-center py-4 position-relative">
+          <h2 class="mx-auto mb-4 w-100 fs-5"><i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i></h2>
+     
+
+
+
+          <div class="mb-3">
+            <div class="inputtitle fs-5 fw-bold mt-3 mb-1 d-flex align-items-center gap-2">
+              <i class="fa-solid fa-book"></i><span> Site Name</span>
+            </div>
+            <input type="text" class="form-control" id="name" placeholder="Bookmark Name" oninput="validatename()">
+            <p class="error d-none">Name must start with capital letter followed by 3 characters or more</p>
+          </div>
+          <div class="mb-3">
+            <div class="inputtitle fs-5 fw-bold mt-3 mb-1 d-flex align-items-center gap-2">
+              <i class="fa-solid fa-link"></i><span> Site Url</span>
+            </div>
+            <input type="text" class="form-control" id="url" placeholder="Website URL" oninput="validateurl()">
+            <p class="error d-none">URL must be in the form:"https://www.example.com"</p>
+          </div>
+     
+
+        
+
+          <button class="submitbtn btn text-white fw-bold fs-4" type="button" onclick="addlink()">Submit</button>
+        </form>
+        <div class="details fw-bold fs-6 bg-white d-flex align-items-center justify-content-center py-2 mt-3 text-center">
+          <div class="w-25 d-flex justify-content-center"><span class="w-50">Index</span></div>
+          <div class="w-25 d-flex justify-content-center"><span class="w-50">Website Name</span></div>
+          <div class="w-25 d-flex justify-content-center"><span class="w-50">Visit</span></div>
+          <div class="w-25 d-flex justify-content-center"><span class="w-50">Delete</span></div>
+         </div>
+       
+       <div class="linkcontain" id="linkcontainer">
+      
+       </div>
+       
+
+      </div>
+    </section>
+  </main>
+
+
+
+  <script src="./Javascript/bootstrap.bundle.min.js"></script>
+  <script src="./Javascript/index.js"></script>
+</body>
+
+</html>

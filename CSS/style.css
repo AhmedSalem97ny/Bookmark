@@ -1,0 +1,125 @@
+:root{
+    --main-dark-color: #101214;
+    --secondary-dark-color: #161a1d;
+    --tertiary-dark-color: #333;
+
+}
+
+
+body{
+    font-family: "lora" , serif;
+    background-color: rgb(255, 238, 218) ;
+    
+}
+
+h1{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: normal;
+    color: black;
+    position: relative;
+    width: fit-content;
+    
+}
+
+h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0px;
+    bottom: 10px;
+    background-color: rgb(254, 194, 96);
+    z-index: -1;
+    transition: height 350ms;
+}
+
+h1:hover::after{
+    height: 50%;
+}
+
+
+h2{
+    font-family: Righteous, cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, rgb(60, 165, 92), rgb(206, 206, 0));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-control{
+    
+    color: black;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.form-floating>.form-control{
+ max-height: 30px;
+ min-height: 25px;
+  
+}
+
+.form-control:focus{
+    box-shadow:none;
+}
+
+.form-floating>.form-control:focus~label::after{
+    background-color: transparent;
+}
+
+
+
+form{
+
+    border-top: 2px dotted black;
+    border-bottom: 2px dotted black;
+}
+
+button{
+    width: 100px;
+}
+
+.inner {
+    background-color: var(--secondary-dark-color);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.inner img {
+    height: 150px;
+    object-fit: contain;
+}
+
+.error{
+    color: red;
+    font-size: 14px;
+}
+
+.error::before{
+    content:"* "; 
+}
+
+.w-fit{
+    width: fit-content;
+}
+
+
+
+.details span{
+    font-family: Righteous, cursive;
+
+}
+
+.submitbtn{
+    width: 150px;
+    background-color: rgb(209, 83, 37);
+}
+
+.submitbtn:hover{
+    background-color: rgb(151, 60, 27);
+}
